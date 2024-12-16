@@ -1,0 +1,14 @@
+<header class="header">
+  <h1 class="header_title">Lehends To Do List</h1>
+  <div class="header_datetime">
+    {{ currentDate | date: 'fullDate' }} - {{ currentTime }}
+  </div>
+  <button
+    mat-icon-button
+    class="header_btn"
+    aria-label="Adicionar nova tarefa"
+    (click)="handleOpenModal()"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+</header>
